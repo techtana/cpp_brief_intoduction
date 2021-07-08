@@ -9,6 +9,6 @@
 * Constants usage and implication when using with pointers
 * Arrays: Stack and Heaps methods
 * Classes and Inheritance: accessing member structure i.e. (->), static variables, redefinition of function i.e. virtual function, virtual destructor
-* Struct: Similar to class, but everything is public. Commonly used to store data i.e. "data __struct__ure"
+* Struct: Similar to class, but everything is public. Commonly used to store data i.e. "data **struct**ure"
 * Namespace: global, local, and specifying namespace i.e. `using namespace`
 * Header guard and `#Pragma` directive
