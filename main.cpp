@@ -94,8 +94,9 @@ void println(const char* input)
     cout << input << endl;
 }
 
-int Entity::a = 3;  // declare static variable
-
+// int Entity::a = 3;  // declare static variable
+//                     // NOTE :: Make sure this static `a` is not defined multiple times.
+//                     // There is another definition entity.cpp
 
 int main(int argc, char *args[])
 {
@@ -172,7 +173,7 @@ int main(int argc, char *args[])
     // To declare static variable in Entity, we declare this in the global scope i.e. outside of main(){}
     // int Entity::a = 2;  
     // To use the static variable in Entity class
-    LOG("Entity::a");
+    LOG("Entity::a = ");
     LOG(Entity::a);
 
 
@@ -195,7 +196,7 @@ int main(int argc, char *args[])
     printEntity(plyr);
 
 
-    // system("PAUSE");
+    system("PAUSE");
     return 0;
 }
 

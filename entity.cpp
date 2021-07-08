@@ -6,7 +6,8 @@
 
 #include "entity.h"
 
-// int Entity::a = 2;  // declare static variable
+int Entity::a = 2;  // declare static variable
+                    // NOTE :: Make sure this static `a` is not defined multiple times.
 
 Entity::Entity(int x, int y)
 {

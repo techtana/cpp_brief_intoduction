@@ -13,19 +13,20 @@ class Entity
         int x, y;
     
     public:
-        Entity(int x, int y)
-        {
-            this -> x = x;  // this -> operator is used when working with pointer objects / variables
-            this -> y = y;
-        }
+        // Entity(int x, int y)
+        // {
+        //     this -> x = x;  // this -> operator is used when working with pointer objects / variables
+        //     this -> y = y;
+        // }
+        Entity(int x, int y);  // allowing redefinition later in entity.cpp
 
-        int getX() const { return x; }
-        int getY() const { return y; }
+        // int getX() const { return x; }
+        // int getY() const { return y; }
         // int getY() { y++; return y; } // This is what we want to avoid: messing with original memory.
 
         // This declare an object which will allow us to modify later in player.cpp file
-        // virtual int getX_vir() const;  // vitual will allow the function to be overriden.
-        // virtual int getY_vir() const;
+        virtual int getX() const;  // vitual will allow the function to be overriden later in entity.cpp
+        virtual int getY() const;
 
     // private:
 
